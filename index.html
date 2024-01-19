@@ -1,11 +1,68 @@
+
+ <!DOCTYPE html>
 <html>
 <head>
-<title> my webpage </title>
-  <link rel="stylesheet" href="style.css"/>
+<title>Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initila-scale=1.0">
+<style>
+body {
+background-color:black;
+}
+button {
+border: 2px solid black;
+border-radius: 15px;
+padding: 20px, 20px;
+width: 80px;
+height: 50px;
+font-size: 30px;
+background-color: #ffffff;
+}
+button:hover {
+background-color: #00fff0;
+cursor: pointer;
+box-shadow: 0 16px 30px rgba(0,  0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.21);
+}
+input{
+text-align: right;
+padding:30px;
+}
+form{
+display:block;
+flex-direction:row;
+align-items: center;
+}
+</style>
 </head>
 <body>
-<header>
-  
-</header>
+<form name="elements">
+<input type="textfield" name="calculate" value="" placeholder="0" id="calculate"><br/>
+<button type="button" onclick="document.elements.calculate.value +='0xA'">A</button>
+<button type="button" onclick="document.elements.calculate.value +='('">(</button>
+<button type="button" onclick="document.elements.calculate.value +=')'">)</button>
+<button type="button" onclick="document.elements.calculate.value **=2">x<sup>2</sup></button>
+<button type="reset">CE</button> 
+<button type="button" onclick="document.elements.calculate.value +='0xB'">B</button>
+<button type="button" onclick="document.elements.calculate.value +='9'">9</button>
+<button type="button" onclick="document.elements.calculate.value +='8'">8</button>
+<button type="button" onclick="document.elements.calculate.value +='7'">7</button>
+<button type="button" onclick="document.elements.calculate.value +='/'">/</button>
+<button type="button" onclick="document.elements.calculate.value +=0xC">C</button>
+<button type="button" onclick="document.elements.calculate.value +='6'">6</button>
+<button type="button" onclick="document.elements.calculate.value +='5'">5</button>
+<button type="button" onclick="document.elements.calculate.value +='4'">4</button>
+<button type="button" onclick="document.elements.calculate.value +='*'">&times;</button>
+<button type="button" onclick="document.elements.calculate.value +='0xD'">D</button>
+<button type="button" onclick="document.elements.calculate.value +='3'">3</button>
+<button type="button" onclick="document.elements.calculate.value +='2'">2</button>
+<button type="button" onclick="document.elements.calculate.value +='1'">1</button>
+<button type="button" onclick="document.elements.calculate.value +='-'">-</button>
+<button type="button" onclick="document.elements.calculate.value +='0xE'">E</button>
+<button type="button" onclick="document.elements.calculate.value +='0'">0</button>
+<button type="button" onclick="document.elements.calculate.value +='.'">.</button>
+<button type="button" onclick="document.elements.calculate.value +='+'">+</button>
+<button type="button" onclick="document.elements.calculate.value=eval(document.elements.calculate.value)">=</button> 
+<marquee> Developed by Musakalam</marquee
+</form>
 </body>
 </html>
