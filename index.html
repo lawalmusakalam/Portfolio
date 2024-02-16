@@ -1,68 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
 
- <!DOCTYPE html>
-<html>
 <head>
-<title>Calculator</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initila-scale=1.0">
-<style>
-body {
-background-color:black;
-}
-button {
-border: 2px solid black;
-border-radius: 15px;
-padding: 20px, 20px;
-width: 80px;
-height: 50px;
-font-size: 30px;
-background-color: #ffffff;
-}
-button:hover {
-background-color: #00fff0;
-cursor: pointer;
-box-shadow: 0 16px 30px rgba(0,  0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.21);
-}
-input{
-text-align: right;
-padding:30px;
-}
-form{
-display:block;
-flex-direction:row;
-align-items: center;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mhycon Cruiz Graphics</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" href="mhycon technologies fav icon.jpg" />
 </head>
+
 <body>
-<form name="elements">
-<input type="textfield" name="calculate" value="" placeholder="0" id="calculate"><br/>
-<button type="button" onclick="document.elements.calculate.value +='0xA'">A</button>
-<button type="button" onclick="document.elements.calculate.value +='('">(</button>
-<button type="button" onclick="document.elements.calculate.value +=')'">)</button>
-<button type="button" onclick="document.elements.calculate.value **=2">x<sup>2</sup></button>
-<button type="reset">CE</button> 
-<button type="button" onclick="document.elements.calculate.value +='0xB'">B</button>
-<button type="button" onclick="document.elements.calculate.value +='9'">9</button>
-<button type="button" onclick="document.elements.calculate.value +='8'">8</button>
-<button type="button" onclick="document.elements.calculate.value +='7'">7</button>
-<button type="button" onclick="document.elements.calculate.value +='/'">/</button>
-<button type="button" onclick="document.elements.calculate.value +=0xC">C</button>
-<button type="button" onclick="document.elements.calculate.value +='6'">6</button>
-<button type="button" onclick="document.elements.calculate.value +='5'">5</button>
-<button type="button" onclick="document.elements.calculate.value +='4'">4</button>
-<button type="button" onclick="document.elements.calculate.value +='*'">&times;</button>
-<button type="button" onclick="document.elements.calculate.value +='0xD'">D</button>
-<button type="button" onclick="document.elements.calculate.value +='3'">3</button>
-<button type="button" onclick="document.elements.calculate.value +='2'">2</button>
-<button type="button" onclick="document.elements.calculate.value +='1'">1</button>
-<button type="button" onclick="document.elements.calculate.value +='-'">-</button>
-<button type="button" onclick="document.elements.calculate.value +='0xE'">E</button>
-<button type="button" onclick="document.elements.calculate.value +='0'">0</button>
-<button type="button" onclick="document.elements.calculate.value +='.'">.</button>
-<button type="button" onclick="document.elements.calculate.value +='+'">+</button>
-<button type="button" onclick="document.elements.calculate.value=eval(document.elements.calculate.value)">=</button> 
-<marquee> Developed by Musakalam</marquee
-</form>
+    <header>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-cotainer" for="menu-toggle">
+            <div class="menu-button"></div>
+
+        </label>
+        <ul class="menu">
+            <a href="index.html" class="list">
+                <li>Home </li>
+            </a>
+            <a href="portfolio.html" class="list">
+                <li>portfolio </li>
+            </a>
+            <a href="services.html" class="list">
+                <li> Services </li>
+            </a>
+            <a href="about.html" class="list">
+                <li> About</li>
+            </a>
+            <a href="mailto:lawalmusakalam@gmail.com" class="list">
+                <li> Hire Me</li>
+            </a>
+        </ul>
+    </header>
+
+
+    <main>
+        <div id="container">
+                <img src="MHYCON TECHNOLOGIES.jpg" id="image" />
+          
+        
+        <div class="content">
+            
+                <i>Frontend Web developer /  Graphics Designer </i>
+            
+       <h2 id="h1"  > WELCOME </h2>
+       <p> welcome to my realm of digital innovation, where i specialize in 
+        crafting seamless and visually appealing web and graphics solutions tailored
+        to meet your unique needs with a keen eye for design and a mastery in Html Css and Javascript. i offer
+        a comprehensive range of web development services.
+    </p>
+    <a href="https://www.github.com/@lawalmusakalam" id="github"> follow me on github </a>
+       <p class="second"> i work to create innovative solutions that inspire, and foster 
+            memorable relationships between brands and their clients. 
+            with a focus on graphics and web, i strive to create usable and polished products through 
+            passionate and delibrate designs.
+        </p>
+            
+            
+            <a href="services.html" id="service-link"> Get Started</a>
+            
+        </div>
+        <form method="post" action="https://formspree.io/f/mzbnbaek">
+            
+            <div class="form">
+                <h2> Send Me a Message</h2>
+                <input type="text" name="Fullname" autofocus placeholder="Full name"/>
+                <input type="text" name="email" placeholder="Email"/>
+                <input type="text" name="message" id="message" placeholder="Message here" />
+                <button type="submit">  submit</button> 
+                <h2> Follow Me on </h2>
+            <div class="container">
+                
+                <a href="https://instagram.com/mhyconcruizgraphics?igshid=MzNINGNKZWQ4MG==">
+                    <img src="instagram.svg"class="image" />
+                </a>
+                <a href="https://www.x.com/@mhyconcruiz">
+                    <img src="twitter.svg"class="image"/>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100089099874459">
+                    <img src="facebook.svg" class="image"/>
+                </a>
+               
+                <a href="tel:09034182767">
+                    <img src="whatsapp.jpg" class="image"/>
+                    </a>
+                    <a href="mailto:lawalmusakalam@gmail.com">
+                        <img src="Screenshot_20231006-163126.png" class="image"/>
+                        </a>
+            </div>
+    
+        </div>
+    
+        
+    </div>
+   
+   
+</div>
+    </main>
+    
+    </form>
+    <p class="footer-space"></p>
+
+    <footer>
+
+        <div class="footer-copyright">
+            Copyright © 2023 All rights reserved | Mhycon Technologies
+        </div>
+    </footer>
 </body>
 </html>
