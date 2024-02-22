@@ -1,0 +1,79 @@
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    outline:none;
+    border: none;
+    border-bottom: 1.5px solid green;
+}
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+   
+}
+.form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 60%;
+justify-content: center;
+margin: 0 auto;
+}
+
+.form{
+    /* height: 520px; */
+    border-radius: 20px;
+
+}
+
+#message{
+    padding: 10px;
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 10px 25px 10px 15px;
+    text-align: center;
+    outline:none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+button input{
+    width: 30%;
+}
+.image{
+    border-radius: 50%;
+     width: 50%; 
+    margin: px;
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: row; 
+  
+}
+a{
+    text-align: center;
+  
+}
+h2{
+    text-align: center;
+}
+
+#contact{
+    width: 10%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#telephone{
+    width: 20%;
+    border-radius: 50%;
+    margin: 0px;
+}

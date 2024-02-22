@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+main {
+    flex: 1 0 auto;
+    margin-left: 10px;
+
+}
+header {
+    background-color: green;
+    padding: 15px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    color: white;
+}
+#menu-toggle {
+    display: none;
+
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration-line: none;
+    margin: 0;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    color: white;
+    text-decoration-line: none;
+    padding: 10px;
+}
+  .list:hover {
+    background-color: white;
+    color: green;
+    height: 40px;
+}   
+@media (max-width:700px) {
+    header {
+        background-color: green;
+        padding: 15px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+       
+        background-color: green;
+    }
+
+    .menu {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .menu-button-cotainer {
+        display: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #menu-toggle {
+        display: none;
+
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: absolute;
+        margin: 0;
+        height: 4px;
+        width: 25px;
+        border-radius: 20px;
+        margin-left: auto;
+    }
+
+    .menu-button::before {
+        content: "";
+        margin-top: 2px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .menu-button {
+        content: "";
+        margin-top: 2px;
+        position: absolute;
+        top: 5px;
+    }
+
+    .menu-button::after {
+        content: "";
+        margin-top: 6px;
+    }
+
+    #menu-toggle:checked+.menu-button-cotainer .menu-button {
+        position: absolute;
+        display: block;
+        transform: rotate(405deg);
+        margin-top: 10px;
+
+    }
+
+    #menu-toggle:checked+.menu-button-cotainer .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(100deg);
+        position: absolute;
+        top: 0px;
+
+    }
+
+    #menu-toggle:checked+.menu-button-cotainer .menu-button::after {
+        position: absolute;
+        display: none;
+    }
+
+    .menu-button-cotainer {
+        display: flex;
+
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 26px;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu-toggle~.menu .list {
+        height: 0;
+        margin: 0;
+        padding: 0px;
+        border: none;
+        transition: 1s;
+    }
+
+    #menu-toggle:checked~.menu .list {
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu>.list {
+        display: flex;
+        margin: 0px;
+        padding: 10px;
+
+    }
+}
+p{
+    text-align: justify;
+    font-family: arial;
+    margin: 1;
+}
+#h1{
+    margin: 0;
+    color: green;
+    font-size: 25px;
+    font-family: arial black;
+  }
+.footer-space{
+    margin: 30px;
+}
+
+#service-link{
+    color: white;
+    text-decoration-line: none;
+    margin: 5px;
+    background-color: green;
+    padding: 10px;
+    width: max-content;
+    border-radius: 20px;
+   text-align: center;
+    
+}
+.git{
+    width: 20%;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    border-radius: 50%;
+    width: 40%;
+    margin: 5px;
+    text-decoration-line: none;
+  
+}
+#service-link:hover{
+    box-shadow: 0px 0px 20px green;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-around;
+}
+   
+#github{
+    color: black;
+    text-transform: capitalize;
+
+}
+footer {
+    background-color: black;
+    position: relative;
+    margin-top: 25px;
+}
+
+.footer-copyright {
+    width: 100%;
+    height: 70px;
+    background: #333;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    left: 0px;
+} 
+
+i{
+    font-family: brush script;
+    font-size: 20px;
+    text-align: center;
+}
+#image{
+    width: 50%;
+    margin: 1px;
+
+    margin: 0 auto;
+
+} 
+
+
+
+
+
